@@ -30,7 +30,7 @@ function animation (e){
       scale: 0,
       autoAlpha: 0,
       ease: Cubic.easeOut
-    }, -0.4, 0.5)    
+    }, -0.4, 0.5)
     .staggerFrom(".st1", 0.5 , {
       scale: 0,
       autoAlpha: 0,
@@ -41,5 +41,5 @@ function animation (e){
 
 document.addEventListener('click', function(e){animation(e)});
 document.querySelector("#ring").addEventListener('click', function(){ location.reload()});
-document.addEventListener('click', function(e){animation(e)});
+document.addEventListener('touchstart', function(e){animation(e)});
 document.querySelector("#ring").addEventListener('touchstart', function(){ location.reload()});

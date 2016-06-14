@@ -40,22 +40,22 @@ function animation (e){
       y: '-=100',
       autoAlpha: 0,
       ease: Back.easeOut
-    }, 0.5, 3.5)    
+    }, 0.5, 3.5)
     .staggerFrom(".sts", 0.5 , {
       scale: 0,
       autoAlpha: 0,
       ease: Cubic.easeOut
-    }, 0.3, 0.9)    
+    }, 0.3, 0.9)
     .staggerFrom(".line", 3 , {
         autoAlpha: 0,
       scale: 0,
         transformOrigin: '0 100%',
       ease: Cubic.easeOut
-    }, 0.35, 2.5)    
+    }, 0.35, 2.5)
   }
 }
 
 document.addEventListener('click', function(e){animation(e)});
 document.querySelector("#ring").addEventListener('click', function(){ location.reload()});
-document.addEventListener('click', function(e){animation(e)});
+document.addEventListener('touchstart', function(e){animation(e)});
 document.querySelector("#ring").addEventListener('touchstart', function(){ location.reload()});

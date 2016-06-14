@@ -29,16 +29,16 @@ function animation (e){
       scale: 0,
       autoAlpha: 0,
       ease: Cubic.easeOut
-    }, 0.5, 0.25)      
+    }, 0.5, 0.25)
     .staggerFrom(".z", 0.6 , {
       scale: 0,
       autoAlpha: 0,
       ease: Cubic.easeOut
-    }, 0.15, 2.5)    
+    }, 0.15, 2.5)
   }
 }
 
 document.addEventListener('click', function(e){animation(e)});
 document.querySelector("#ring").addEventListener('click', function(){ location.reload()});
-document.addEventListener('click', function(e){animation(e)});
+document.addEventListener('touchstart', function(e){animation(e)});
 document.querySelector("#ring").addEventListener('touchstart', function(){ location.reload()});

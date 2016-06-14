@@ -30,11 +30,11 @@ function animation (e){
       scale: 0,
       autoAlpha: 0,
       ease: Cubic.easeOut
-    }, 0.25, 0.5)    
+    }, 0.25, 0.5)
   }
 }
 
 document.addEventListener('click', function(e){animation(e)});
 document.querySelector("#ring").addEventListener('click', function(){ location.reload()});
-document.addEventListener('click', function(e){animation(e)});
+document.addEventListener('touchstart', function(e){animation(e)});
 document.querySelector("#ring").addEventListener('touchstart', function(){ location.reload()});
