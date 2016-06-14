@@ -40,16 +40,16 @@ function animation (e){
       autoAlpha: 0,
         transformOrigin: '50% 100%',
       ease: Cubic.easeOut
-    }, -0.35, 1.9)      
+    }, -0.35, 1.9)
     .staggerFrom(".line", 0.4 , {
       scale: 0,
       autoAlpha: 0,
       ease: Cubic.easeOut
-    }, -0.35, 2.5)    
+    }, -0.35, 2.5)
   }
 }
 
 document.addEventListener('click', function(e){animation(e)});
 document.querySelector("#ring").addEventListener('click', function(){ location.reload()});
-document.addEventListener('click', function(e){animation(e)});
+document.addEventListener('touchstart', function(e){animation(e)});
 document.querySelector("#ring").addEventListener('touchstart', function(){ location.reload()});
